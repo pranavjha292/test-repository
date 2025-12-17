@@ -3,6 +3,9 @@ package com.techie.springbootrediscache.controller;
 import com.techie.springbootrediscache.dto.ProductDto;
 import com.techie.springbootrediscache.service.ProductService;
 import jakarta.validation.Valid;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
